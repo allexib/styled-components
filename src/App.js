@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Title from "./components/Title";
+import Flex from "./components/Flex";
+import Console from "./components/Console";
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -11,7 +14,10 @@ background: black;
 const App = () => {
     return (
         <AppWrapper>
-            app
+            <Flex justify="center">
+                <Title color={"red"}>Console 2021 kama</Title>
+            </Flex>
+            <Console/>
         </AppWrapper>
     );
 };
