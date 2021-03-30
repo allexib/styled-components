@@ -9,7 +9,7 @@ const AppWrapper = styled.div`
 width: 100%;
 min-height: 100vh;
 padding: 2rem;
-background: black;
+background: black; 
 `
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
             </Flex>
             <Flex directon="column">
                 <Console/>
-                <Button align="flex-end">Отправить</Button>
+                <Button primary background="green" color={'red'} align="flex-end">Отправить</Button>
             </Flex>
         </AppWrapper>
     );
