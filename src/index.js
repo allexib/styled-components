@@ -1,21 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import styled, {createGlobalStyle} from 'styled-components';
+import styled, {createGlobalStyle, ThemeProvider} from 'styled-components';
 
 const Global = createGlobalStyle`
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
     box-sizing: border-box;
     font-family: consolas;
 }
 `
 
+const theme = {
+    colors: {
+        primary: "green",
+        secondary: "red",
+    }
+}
+
+
 ReactDOM.render(
-    <>
+    <ThemeProvider theme={theme}>
         <Global/>
-    <App />,
-    </>,
-  document.getElementById('root')
+        <App/>
+    </ThemeProvider>,
+    document.getElementById('root')
 );
