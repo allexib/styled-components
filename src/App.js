@@ -18,8 +18,8 @@ const App = () => {
             <Flex justify="center">
                 <Title color={"green"}>Console 2021 kama</Title>
             </Flex>
-            <Flex directon="column">
-                <Console/>
+            <Flex directon="column" margin={"10px 0"}>
+                <Console color="green"/>
                 <Button color="green"  align="flex-end">Отправить</Button>
             </Flex>
         </AppWrapper>
