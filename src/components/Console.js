@@ -14,6 +14,12 @@ color: ${props => props.color || props.theme.colors.primary};
 &:focus {
     outline: none;
 }
+@media ${props => props.theme.media.phone} {
+    border: 2px solid red;
+}
+@media ${props => props.theme.media.tablet} {
+    border: 2px solid green;
+}
 `
 
 const Console = ({color, ...props}) => {
