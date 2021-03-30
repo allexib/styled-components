@@ -10,7 +10,9 @@ const rotateAnimation = keyframes`
 }
 `
 
-const StyledButton = styled.button`    
+const StyledButton = styled.button.attrs(props => ({
+    outlined: true,
+}))`    
     border: none;
     padding: 10px 15px;
     font-size: 18px;

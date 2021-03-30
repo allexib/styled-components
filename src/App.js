@@ -20,7 +20,7 @@ const App = () => {
             </Flex>
             <Flex directon="column">
                 <Console/>
-                <Button color="green" outlined align="flex-end">Отправить</Button>
+                <Button color="green"  align="flex-end">Отправить</Button>
             </Flex>
         </AppWrapper>
     );
